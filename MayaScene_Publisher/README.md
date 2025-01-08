@@ -142,7 +142,7 @@ For series projects, the tool also supports episode-specific organization. It de
 
 ### Example:
 - File name: `projectName_Ep01_Sc05_Sh010_v01.mb`
-- **Parts**: `[u'projectName', u'Ep05', u'Sc01', u'Sh010', u'v01.mb']`
+- **Parts**: `[u'projectName', u'Ep01', u'Sc05', u'Sh010', u'v01.mb']`
 - Formatted Episode: `Ep_01`
 - Formatted Sequence: `Sc_05`
 - Extracted Shots: `[u'Sh_010']`
