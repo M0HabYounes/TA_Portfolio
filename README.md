@@ -1,6 +1,6 @@
 # Technical Artist Portfolio
 
-Welcome to my Technical Artist portfolio! Here, I showcase tools I’ve developed to enhance VFX workflows with a focus on automation and efficiency.
+Welcome to my Technical Artist portfolio! Here, I showcase tools I’ve developed to enhance VFX workflows for automation and efficiency.
 
 ## Tools
 
