@@ -69,7 +69,7 @@ def get_shot_info():
                     # Otherwise, continue collecting parts for the shot name
                     for next_part in parts[i + start_index + 1:]:
                         # Stop collecting if we hit a version number or keyword
-                        if re.match(r'_v\d+$', next_part) :
+                        if re.match(r'_v\d+$', next_part):
                             break  # Stop collecting if we hit a version number or keyword
                         if next_part.endswith('.mb'):
                             break  # Stop if we hit the file extension
@@ -326,9 +326,9 @@ def publish_file(*args):
         cmds.warning("Invalid shot names!")
         return
 
-    # Get the current Maya file directory
+        # Get the current Maya file directory
     current_file_path = cmds.file(q=True, sceneName=True)
-
+    print current_file_path
     if not current_file_path:
         cmds.warning("No file is currently saved.")
         return
@@ -341,11 +341,10 @@ def publish_file(*args):
         cmds.warning('Could not find the appropriate directory!')
         return
 
-    base_dir = os.path.join(base_dir, episode)
-
-    # Ensure the base directory exists before proceeding
-    if not os.path.exists(base_dir):
-        os.makedirs(base_dir)
+    if episode :
+        base_dir = os.path.join(base_dir, episode)
+        if not os.path.exists(base_dir):
+            os.makedirs(base_dir)
 
         """ 
         ## Special Case for "Z" Directory ##
@@ -422,6 +421,10 @@ def publish_file(*args):
         # Open the file path in the default file explorer
         if os.name == 'nt':  # For Windows
             os.startfile(shot_folder)
+        elif os.name == 'posix':  # For macOS or Linux
+            os.system('open "{}"'.format(shot_folder))  # macOS
+            # For Linux, you might need to adjust the command based on the desktop environment
+            # os.system('xdg-open "{}"'.format(save_path))
 
 def open_preview_folder(*args):
     """Opens the preview folder in the file explorer."""
