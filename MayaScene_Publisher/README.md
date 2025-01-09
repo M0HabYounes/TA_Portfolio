@@ -149,9 +149,8 @@ For series projects, the tool also supports episode-specific organization. It de
 - 3D folder path: `projectName\3D`
 
 ---
+## Demo Link
 
-## Requirements
+To see **MayaScene_Publisher** in action, check out the demo video below:
 
-- **Maya**: The script is compatible with Maya 2017 and above.
-- **Python 2.7+**: The script uses Python to execute functions.
-
+[MayaScene_Publisher Demo](https://youtu.be/jirFi0oZl3Q)
