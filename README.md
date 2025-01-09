@@ -13,7 +13,7 @@ Welcome to my Technical Artist portfolio! Here, I showcase tools I’ve develope
 3. [AdjustPlaybackRange](./AdjustPlaybackRange/README.md)  
    Updates the playback range based on camera keyframes.
 
-4. [OSL Shader (Position Node)](./OSL_Shader_PositionNode/README.md)  
+4. [OSL Shader (Position Node)](./PositionNode_OSL/README.md)  
    An ongoing project using OSL to create a black-and-white mask with object-space controls.
 
 5. [3Dequalizer Distortion Scripts](./3Dequalizer4-MayaDistortionExport/README.md)  
