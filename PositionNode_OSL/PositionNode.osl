@@ -1,0 +1,22 @@
+shader BlackWhiteRamp(
+    float midpoint = 0.0, // The position of the division
+    float fade_width = 0.1, // The width of the fade transition
+    point axis = point(1, 0, 0), // Axis to base the division on (default: X-axis)
+    int invert = 0, // Set to 1 to invert the result
+    output float result = 0.0 // Output value (smooth transition between 0 and 1)
+)
+{
+    // Transform the position to object space
+    point pos = transform("world", "object", P);
+
+    // Project the position onto the specified axis
+    float projection = dot(pos, axis);
+
+    // Create a smooth fade between black and white using smoothstep
+    result = smoothstep(midpoint - fade_width, midpoint + fade_width, projection);
+
+    // Invert the result if the invert flag is set
+    if (invert == 1) {
+        result = 1.0 - result;
+    }
+}
