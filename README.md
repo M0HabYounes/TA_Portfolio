@@ -1,41 +1,20 @@
 # Technical Artist Portfolio
 
-Welcome to my Technical Artist portfolio! Here, I showcase tools I’ve developed to enhance VFX workflows for automation and efficiency.
+Welcome to my Technical Artist portfolio! Here, I showcase tools I’ve developed to enhance VFX workflows with a focus on automation and efficiency.
 
 ## Tools
 
-### 1. AML (Arnold Maps Linker)
+1. [AML (Arnold Maps Linker)](https://github.com/M0HabYounes/AML-Arnold-Maps-Linker)  
+   A Python tool for automating texture map linking in Maya.
 
-A Python script designed to streamline texture workflows by automating the linking of texture maps.
+2. [MayaScene_Publisher](./MayaScene_Publisher/README.md)  
+   Simplifies the process of publishing Maya scenes.
 
-#### Features:
-1. **Automatic Texture Linking**  
-   - Select a BaseColor map, and the tool links related textures automatically (e.g., Roughness, Normal, Metallic).  
+3. [AdjustPlaybackRange](./AdjustPlaybackRange/README.md)  
+   Updates the playback range based on camera keyframes.
 
-2. **Name Manager UI**  
-   - Manage naming conventions through an intuitive user interface—no manual JSON editing required:  
-     - **Add/Delete Texture Names**  
-     - **Toggle "Prefer EXR"** for displacement maps.  
-     - **Enable/Disable UDIM Workflow Support**  
+4. [OSL Shader (Position Node)](./OSL_Shader_PositionNode/README.md)  
+   An ongoing project using OSL to create a black-and-white mask with object-space controls.
 
-3. **LOD Selection**  
-   - Automatically selects LOD0 for textures with multiple levels of detail.  
-
-4. **Compatibility**  
-   - Supports Python 2.7+ and works with Maya 2017 and newer.  
-
-[![Watch Demo](https://img.shields.io/badge/Demo-Click%20Here-blue?style=flat-square)](https://vimeo.com/1041270827)  
-[![Source Code](https://img.shields.io/badge/Source%20Code-GitHub-green?style=flat-square)](https://github.com/M0HabYounes/AML-Arnold-Maps-Linker.git)
-
-
-### 2. [Distortion Exporter](./ToolName2/README.md)
-Streamlines the process of exporting lens distortion data from 3DEqualizer to Maya.  
-**Features**:
-- Direct export of lens distortion settings.
-- Saves time and reduces errors.
-
-[View Demo](#) | [Source Code](./ToolName2/tool_script.py)
-
----
-
-Feel free to explore each tool for detailed documentation and demo links!
+5. [3Dequalizer Distortion Scripts](./3Dequalizer4-MayaDistortionExport/README.md)  
+   Early scripts for exporting distortion data and rendering undistorted plates.
